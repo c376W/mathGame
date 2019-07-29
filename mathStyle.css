@@ -1,6 +1,7 @@
 *{
 	padding:0;
 	margin:0;
+	font-family: cursive, sans-serif;
 }
 
 body{
@@ -18,8 +19,22 @@ body{
 	color:#fff;
 	font-size: 2rem;
 	border-radius: 20px;
+	box-shadow: 2px 4px #333;
+	cursor:pointer;
+	transition: background-color 0.3s;
+	position: relative;
+
 }
 
+.choice:hover,#startReset:hover{
+	background-color: #e3c3c1;
+	color:#000;
+}
+
+.choice:active,#startReset:active{
+	top:4px;
+	box-shadow: 0px 0px;
+}
 
 #container{
 	display: flex;
@@ -34,6 +49,7 @@ body{
 
 }
 
+
 #info{
 	display: flex;
 	flex-direction: row;
@@ -42,11 +58,8 @@ body{
 
 #formula, #instruction,#choices{
 	
-	font-family: cursive, sans-serif;
 	color:#fff;
 	display:flex;
-	
-	
 	justify-content: center;
 	align-items: center;
 	margin:20px;
@@ -56,7 +69,7 @@ body{
 #formula,#instruction{
 	background-color:#f0694a;
 	border-radius: 20px;
-	box-shadow: 0px 4px #333;
+	box-shadow: 2px 4px #333;
 }
 
 #choices{
@@ -75,21 +88,43 @@ body{
 	background-color: #f79f8b;
 }
 
-#score,#correct,#wrong{
+#score,#correct,#wrong,#startReset,#time{
 	color:#fff;
 	display:flex;
-	width:100px;
 	height:50px;
 	background-color:#f5a55f;
 	border-radius: 50px;
 	justify-content: center;
 	align-items: center;
 	margin:20px;
-	box-shadow: 0px 4px #333;
+	box-shadow: 2px 4px #333;
+}
+
+#score,#correct,#wrong,#startReset{
+	width:100px;
+}
+#time{
+	padding: 0 20px;
+	background-color: #69370c;
+	box-shadow: 0 0;
+	border-radius: 5px;
 }
 
 
 #correct,#wrong{	
 	background-color:#e86d51;
 	display:none;
+}
+
+#command{
+	display: flex;
+	margin-bottom: 20px;
+	transition: 0.3s;
+}
+
+#startReset{
+	padding:0 20px;
+	transition: 0.3s;
+	position: relative;
+	cursor: pointer;
 }
