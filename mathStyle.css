@@ -46,6 +46,7 @@ body{
 	border-radius: 50px;
 	box-shadow: 6px 6px #000;
 	align-items: center;
+	position:relative;
 
 }
 
@@ -127,4 +128,21 @@ body{
 	transition: 0.3s;
 	position: relative;
 	cursor: pointer;
+}
+
+#gameOver{
+	display: flex;
+	color:#444;
+	flex-direction: column;
+	justify-content: center;
+	width:500px;
+	height:300px;
+	font-size: 3rem;
+	border-radius: 10px;
+	text-align: center;
+	background-image: linear-gradient(#ffeab0,#fcba03);
+	position:absolute;
+	top:200px;
+	z-index: 2;
+	display: none;
 }
