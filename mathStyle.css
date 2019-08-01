@@ -119,6 +119,7 @@ body{
 
 #command{
 	display: flex;
+	justify-content: flex-start;
 	margin-bottom: 20px;
 	transition: 0.3s;
 }
