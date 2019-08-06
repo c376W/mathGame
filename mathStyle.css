@@ -89,7 +89,7 @@ body{
 	background-color: #f79f8b;
 }
 
-#score,#correct,#wrong,#startReset,#time{
+#score,#wrong,#startReset,#time{
 	color:#fff;
 	display:flex;
 	height:50px;
@@ -101,7 +101,7 @@ body{
 	box-shadow: 2px 4px #333;
 }
 
-#score,#correct,#wrong,#startReset{
+#score,#wrong,#startReset{
 	width:100px;
 }
 #time{
@@ -112,7 +112,7 @@ body{
 }
 
 
-#correct,#wrong{	
+#wrong{	
 	background-color:#e86d51;
 	display:none;
 }
